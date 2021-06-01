@@ -6,7 +6,7 @@ import {withStyles} from '@material-ui/core/styles'
 
 // calling the function with an object inside of it
 const StyledButton = withStyles ({
-    // defining classes, giving them a name and writing normal css. all values must be in quotation marks and end with a comma
+    // defining classes, giving them a name and writing normal css. all values must be in quotation marks and end with a comma. also written in camelCase only.
     root: {
         display: "flex",
         alignItems: "center",
@@ -32,6 +32,7 @@ const StyledButton = withStyles ({
 
 function CustomBtn(props) {
     return (
+        // we are taking material-ui's button component, use the withStyles to get a bunch of custom css. the StyledButton is from the const above which gets our Button component
         <StyledButton variant="contained">{props.txt}</StyledButton>
     )
 }
