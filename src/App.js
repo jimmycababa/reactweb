@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <CustomBtn txt="hello world" />
+        
       </ThemeProvider>
       
     </div>
